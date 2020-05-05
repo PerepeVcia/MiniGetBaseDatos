@@ -1,7 +1,7 @@
 <?php 
 //  	Manejar tabla inbox
 
-require('conexion.php');
+require_once('../models/conexion_model.php');
 
 class tablainbox extends Conexion{
 

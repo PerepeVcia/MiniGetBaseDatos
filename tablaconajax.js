@@ -11,7 +11,7 @@ var funConsultaTabla2 = function(){
 
 	$.ajax({
 		type: "POST",
-		url: "muestraconsulta.php",
+		url: "controllers/consulta_controller.php",
 		datatype: 'json',
 		}).done(function(data){
 
@@ -47,13 +47,13 @@ function funConsultaTabla(){
 
 	$.ajax({
 		type: "POST",
-		url: "muestraconsulta.php",
+		url: "controllers/consulta_controller.php",
 		datatype: 'json',
 		}).done(function(data){
 
 		//objjson es un string que tiene formato json, y lo convertimos a un objeto Json
 		objjson = JSON.parse(data);
-						
+
 		var mostrarhtml;
 
 		$.each(objjson, function(index,objeto2) {
